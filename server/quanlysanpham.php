@@ -9,7 +9,7 @@ $query="SELECT * FROM sanpham";
 $data=Mysqli_query($conn,$query);
 while ($row =mysqli_fetch_assoc($data)) {
 			array_push($mangsanpham,new Sanpham(
-				$row['id'],
+				$row['id_sp'],
 				$row['tensanpham'],
 				$row['hinhanh'],
 				$row['giasanpham'],
@@ -20,8 +20,8 @@ while ($row =mysqli_fetch_assoc($data)) {
 		}
 		echo json_encode($mangsanpham);
 class Sanpham{
-	function Sanpham($id,$tensanpham,$hinhanh,$giasanpham,$idsanpham,$motasanpham){
-		$this->id=$id;
+	function Sanpham($id_sp,$tensanpham,$hinhanh,$giasanpham,$idsanpham,$motasanpham){
+		$this->id_sp=$id_sp;
 		$this->tensanpham=$tensanpham;
 		$this->hinhanh=$hinhanh;
 		$this->giasanpham=$giasanpham;

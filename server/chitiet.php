@@ -12,7 +12,7 @@ $sql2="SELECT * FROM donhang  ORDER BY id DESC LIMIT 1;";
           $tensanpham=$value['tensanpham'];
           $giasanpham=$value['giasanpham'];
           $soluongsanpham=$value['soluongsanpham'];
-           $sql3="INSERT INTO chitietdonhang (id,iddonhang,masanpham,tensanpham,giasanpham,soluongsanpham) VALUES (null,'$madonhang','$masanpham','$tensanpham','$giasanpham','$soluongsanpham')";
+           $sql3="INSERT INTO chitietdonhang (id_cthd,iddonhang,masanpham,tensanpham,giasanpham,soluongsanpham) VALUES (null,'$madonhang','$masanpham','$tensanpham','$giasanpham','$soluongsanpham')";
           $query3=Mysqli_query($conn,$sql3);
         }
         if($query3){

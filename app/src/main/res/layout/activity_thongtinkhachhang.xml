@@ -3,41 +3,60 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="@color/colorPrimary"
+    android:background="#F3F3F4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.Thongtinkhachhang">
+
     <LinearLayout
-        android:background="@drawable/boder"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="80dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:text="Thông tin khách hàng"
+            android:text="Đăng Ký Thông Tin"
             android:textSize="30sp"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="#060707"
+            android:textStyle="bold"
+            android:layout_marginTop="120dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <EditText
             android:layout_marginLeft="5dp"
             android:layout_marginTop="35dp"
-            android:id="@+id/edittexttenkhachhang"
+            android:id="@+id/edittextusername"
             android:inputType="text"
-            android:hint="Nhập tên khách hàng"
+            android:hint="Username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
         <EditText
+            android:inputType="textPassword"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="35dp"
-            android:id="@+id/edittextsdt"
-            android:hint="Nhập số điện thoại"
+            android:id="@+id/edittextpassword"
+            android:hint="Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:inputType="textPassword"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="35dp"
+                android:id="@+id/c_password"
+                android:hint="Confrim Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
         <EditText
             android:layout_marginLeft="5dp"
             android:layout_marginTop="35dp"
@@ -45,22 +64,44 @@
             android:id="@+id/edittextemail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"
+            android:hint="Nhập số điện thoại"
+            android:id="@+id/editsdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"
+            android:hint="Nhập địa chỉ"
+            android:id="@+id/editdiachi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            ></ProgressBar>
         <LinearLayout
             android:layout_marginTop="35dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
             <Button
                 android:layout_marginLeft="50dp"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="#F0EEF4"
                 android:text="xác nhận"
                 android:id="@+id/buttonxacnhan"
+                android:background="#347C26"
                 android:textSize="15sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <Button
                 android:layout_marginLeft="70dp"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="#F0EEF4"
+                android:background="#347C26"
                 android:text="trở về"
                 android:id="@+id/buttontrove"
                 android:textSize="15sp"
@@ -68,4 +109,6 @@
                 android:layout_height="wrap_content" />
         </LinearLayout>
     </LinearLayout>
+
+
 </LinearLayout>

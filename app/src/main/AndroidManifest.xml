@@ -14,18 +14,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.Thongtinkhachhang"></activity>
-        <activity android:name=".activity.Giohang" />
-        <activity android:name=".activity.ChiTietSanPham" />
-        <activity android:name=".activity.LapTopActivity" />
-        <activity android:name=".activity.DienThoaiActivity" />
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".activity.Session"></activity>
+        <activity android:name=".activity.xacnhanthongtin" />
+        <activity android:name=".activity.Register">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.UpdateSanpham" />
+        <activity android:name=".activity.AddSanPham" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.Quanlysanpham" />
+        <activity android:name=".activity.Thongtinkhachhang" />
+        <activity android:name=".activity.Giohang" />
+        <activity android:name=".activity.ChiTietSanPham" />
+        <activity android:name=".activity.DoAnNhanhActivity" />
+        <activity android:name=".activity.MonLauActivity" />
+        <activity android:name=".activity.MainActivity"></activity>
     </application>
 
 </manifest>

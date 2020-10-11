@@ -6,7 +6,7 @@
   $idsanpham= $_POST['idsanpham'];
   $motasanpham= $_POST['motasanpham'];
   if(strlen($tensanpham)>0 && strlen($hinhanh)>0 && strlen($giasanpham)>0&& strlen($giasanpham)>0 &&strlen($motasanpham)>0 ){
-  	$sql="INSERT INTO sanpham(id, tensanpham, hinhanh, giasanpham,idsanpham,motasanpham) VALUES (null,'$tensanpham','$hinhanh','$giasanpham',$idsanpham,'$motasanpham')";
+  	$sql="INSERT INTO sanpham(id_sp, tensanpham, hinhanh, giasanpham,idsanpham,motasanpham) VALUES (null,'$tensanpham','$hinhanh','$giasanpham',$idsanpham,'$motasanpham')";
   	$query=Mysqli_query($conn,$sql);
   		if($query){
   			echo"1";

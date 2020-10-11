@@ -22,13 +22,9 @@
             
             $index['username'] = $row['username'];
             $index['email'] = $row['email'];
-           
-
             array_push($result['login'], $index);
              $result['success'] = "1";
             $result['message'] = "success";
-
-          
             echo json_encode($result);
 
             mysqli_close($conn);

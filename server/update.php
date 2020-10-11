@@ -7,7 +7,7 @@
   $idsanpham= $_POST['idsanpham'];
   $motasanpham=$_POST['motasanpham'];
  
-  	$sql="UPDATE sanpham SET tensanpham='$tensanpham', hinhanh='$hinhanh', giasanpham='$giasanpham',idsanpham='$idsanpham',motasanpham='$motasanpham' WHERE id='$id'";
+  	$sql="UPDATE sanpham SET tensanpham='$tensanpham', hinhanh='$hinhanh', giasanpham='$giasanpham',idsanpham='$idsanpham',motasanpham='$motasanpham' WHERE id_sp='$id'";
   	$query=Mysqli_query($conn,$sql);
   		if($query){
   			echo"1";
